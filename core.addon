@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "Mallet - Core",
+    "description": "Mallet's addon core (required)",
+    "target": "mallet"
+  },
+  "scripts": {
+    "load": [
+      "newSidebar \"addons\" \"Addons\""
+    ],
+    "sidebar_addons": [
+      "save \"addons.cfg\" \"get\"",
+      "disabledaddons = save_data[\"disabledaddons\"]",
+      "sidebary += 5",
+      "each addoni addon addonnames (; if addon != \"core\" (",
+      "  sidebary += 18",
+      "  goto sidebarx + 5 sidebary * -1 + 18",
+      "  square 230 17 10 0 1",
+      "  if mouse_touching \"temp1 = #444444\" else \"temp1 = #393939\"",
+      "  if mouse_touching \"temp2 = #555\" else \"temp2 = #4c4c4c\"",
+      "  col = addon in disabledaddons ? temp1 temp2",
+      "  square 230 17 10 : c#col",
+      "  text addon 10 : c#fff chx#-110",
+      "  goto sidebarx + 110 sidebary * -1 + 18",
+      "  square 15 15 5 : c#777 hover_c#888",
+      "  if mouse_touching and click (",
+      "    i = disabledaddons.index(addon)",
+      "    has = disabledaddons.contains(addon)",
+      "    if has (; disabledaddons.delete(i); )",
+      "    if has.not (; disabledaddons.append(addon); )",
+      "    save \"addons.cfg\" \"get\"",
+      "    val = save_data",
+      "    val[\"disabledaddons\"] = disabledaddons",
+      "    save \"addons.cfg\" \"set\" val",
+      "    loadfiles",
+      "  )",
+      "  if addon in disabledaddons (; icon \"close\" .5 : c#fff; )",
+      "  if addon notIn disabledaddons (; icon \"tick\" .5 : c#fff; )",
+      "  sidebary += 18",
+      "); )",
+      "sidebary += 5"
+    ]
+  }
+}
