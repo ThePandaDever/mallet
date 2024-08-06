@@ -38,6 +38,14 @@
       "  if addon notIn disabledaddons (; icon \"tick\" .5 : c#fff; )",
       "  sidebary += 18",
       "); )",
+      "sidebary += 20",
+      "goto sidebarx + 5 sidebary * -1 + 18",
+      "square 220 20 10 : c#333 hover_c#444",
+      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "  installdefaultaddons",
+      "); )",
+      "text \"Re-install default addons\" 8.5 : c#fff chx#-105",
+      "sidebary += 20",
       "sidebary += 5"
     ]
   }
