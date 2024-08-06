@@ -6,12 +6,15 @@
   },
   "scripts": {
     "load": [
-      "newSidebar \"addons\" \"Addons\""
+      "newSidebar \"settings\" \"Settings\""
     ],
-    "sidebar_addons": [
+    "sidebar_settings": [
       "save \"addons.cfg\" \"get\"",
       "disabledaddons = save_data[\"disabledaddons\"]",
-      "sidebary += 5",
+      "sidebary += 10",
+      "goto sidebarx + 5 sidebary * -1 + 8",
+      "text \"Addons\" 10 : c#fff chx#-115",
+      "sidebary += 20",
       "each addoni addon addonnames (; if addon != \"core\" (",
       "  sidebary += 18",
       "  goto sidebarx + 5 sidebary * -1 + 18",
@@ -38,13 +41,29 @@
       "  if addon notIn disabledaddons (; icon \"tick\" .5 : c#fff; )",
       "  sidebary += 18",
       "); )",
-      "sidebary += 20",
+      "sidebary += 10",
+      "goto sidebarx + 5 sidebary * -1 + 8",
+      "text \"Options\" 10 : c#fff chx#-115",
+      "sidebary += 40",
       "goto sidebarx + 5 sidebary * -1 + 18",
-      "square 220 20 10 : c#333 hover_c#444",
+      "square 230 20 10 : c#444 hover_c#555",
       "if mouse_touching (; mouse \"pointer\"; if click (",
       "  installdefaultaddons",
       "); )",
       "text \"Re-install default addons\" 8.5 : c#fff chx#-105",
+      "sidebary += 40",
+      "goto sidebarx + 5 sidebary * -1 + 18",
+      "square 105 20 10 : chx#-63 c#444 hover_c#555",
+      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "  http \"newtab\" \"https://github.com/ThePandaDever/mallet/wiki\"",
+      "); )",
+      "text \"Docs\" 9 : c#fff chx#-20",
+      "goto sidebarx + 5 sidebary * -1 + 18",
+      "square 105 20 10 : chx#63 c#444 hover_c#555",
+      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "  http \"newtab\" \"https://github.com/ThePandaDever/mallet\"",
+      "); )",
+      "text \"Github\" 9 : c#fff chx#-28",
       "sidebary += 20",
       "sidebary += 5"
     ]
