@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Mallet - Base",
+    "description": "Mallet's base entity and texture pack",
+    "target": "mallet"
+  },
+  "scripts": {
+    "load": [
+      "newEntity \"light\" [[\"range\",\"number\",10],[\"intensity\",\"number\",10],[\"r\",\"number\",1],[\"g\",\"number\",1],[\"b\",\"number\",1]]",
+      "newEntity \"prop_dynamic\" [[\"model\",\"model\"]]",
+      "newEntity \"prop_static\" [[\"model\",\"model\"]]",
+      "newEntity \"info_player\" [] ",
+      "tex_back = \"https://raw.githubusercontent.com/ThePandaDever/AssetStore/main/mapeditor/\"",
+      "newTexture \"brick\" tex_back + \"brick.png\"",
+      "newTexture \"lava\" tex_back + \"lava.png\"",
+      "newTexture \"metal\" tex_back + \"metal.png\"",
+      "newTexture \"path\" tex_back + \"path.png\"",
+      "newTexture \"tiles\" tex_back + \"tiles.png\"",
+      "newTexture \"grass\" tex_back + \"grass.png\""
+    ]
+  }
+}
+
