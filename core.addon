@@ -48,6 +48,7 @@
       "goto sidebarx + 5 sidebary * -1 + 18",
       "square 230 20 10 : c#444 hover_c#555",
       "if mouse_touching (; mouse \"pointer\"; if click (",
+      "  includebase = true",
       "  installdefaultaddons",
       "); )",
       "text \"Re-install default addons\" 8.5 : c#fff chx#-105",
