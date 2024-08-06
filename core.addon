@@ -50,6 +50,7 @@
       "if mouse_touching (; mouse \"pointer\"; if click (",
       "  includebase = true",
       "  installdefaultaddons",
+      "  loadfiles",
       "); )",
       "text \"Re-install default addons\" 8.5 : c#fff chx#-105",
       "sidebary += 40",
