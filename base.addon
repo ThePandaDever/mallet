@@ -11,13 +11,12 @@
       "newEntity \"prop_static\" [[\"model\",\"model\"]]",
       "newEntity \"info_player\" [] ",
       "tex_back = \"https://raw.githubusercontent.com/ThePandaDever/AssetStore/main/mapeditor/\"",
-      "newTexture \"brick\" tex_back + \"brick.png\"",
-      "newTexture \"lava\" tex_back + \"lava.png\"",
-      "newTexture \"metal\" tex_back + \"metal.png\"",
-      "newTexture \"path\" tex_back + \"path.png\"",
-      "newTexture \"tiles\" tex_back + \"tiles.png\"",
-      "newTexture \"grass\" tex_back + \"grass.png\""
+      "newTexture \"brick\" tex_back ++ \"brick.png\"",
+      "newTexture \"lava\" tex_back ++ \"lava.png\"",
+      "newTexture \"metal\" tex_back ++ \"metal.png\"",
+      "newTexture \"path\" tex_back ++ \"path.png\"",
+      "newTexture \"tiles\" tex_back ++ \"tiles.png\"",
+      "newTexture \"grass\" tex_back ++ \"grass.png\""
     ]
   }
 }
-
