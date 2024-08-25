@@ -6,12 +6,12 @@
   },
   "scripts": {
     "load": [
-      "newSidebar \"file\" \"File\"",
-      "newSidebar \"entity\" \"Entity\"",
-      "newSidebar \"texture\" \"Texture\"",
-      "newSidebar \"map\" \"Map\"",
-      "newSidebar \"properties\" \"Properties\"",
-      "newTool \"empty\" \"Empty\" \"n\" 1.7 \"w 4 c #f00 dot 10 10 dot -10 10 dot -10 -10 dot 10 -10 w 1 c #999 line -10 -5 -10 -2 line -10 5 -10 2 line 10 -5 10 -2 line 10 5 10 2 line -5 -10 -2 -10 line 5 -10 2 -10 line -5 10 -2 10 line 5 10 2 10\"",
+      "newSidebarIcn \"file\" \"File\" .8 \"file\"",
+      "newSidebarIcn \"entity\" \"Entity\" 1.2 \"c #ffc200 w 10 dot 0 3.2 w 2 line -2 -1 -2 -3 line 2 -1 2 -3 w 4 line 0 -1 0 -3 w .4 c #c67700 cutcircle 1.5 2 .9 4 125 cutcircle -1.5 2 .9 -4 125 line -.6 2 -.6 -4 line .6 2 .6 -4 line -1.6 1.1 1.6 1.1 w 3 c #585858 dot 0 -6.8 w 1.1 c #7b7b7b line -2 -4.5 2 -4.5 w 1.5 line -1.8 -4.7 -1.8 -7 line 1.8 -4.7 1.8 -7 line -1.8 -7 1.8 -7 w 3 dot 0 -6 w .75 c #585858 line -2.4 -5 2.4 -5 line -2.4 -6.5 2.4 -6.5\"",
+      "newSidebarIcn \"texture\" \"Texture\" .9 \"c #d7d7d9 w 2 square 0 0 10 10 w 9 square 0 0 6 6 dot 0 0 c #bd5b3e w 2.75 square -5.3 8 3.5 .75 square 5.3 8 3.5 .75 square -8 2.5 1 .75 square 0 2.5 3.5 .75 square 8 2.5 1 .75 square -5.3 -2.5 3.5 .75 square 5.3 -2.5 3.5 .75 square -8 -8 1 .75 square 0 -8 3.5 .75 square 8 -8 1 .75\"",
+      "newSidebarIcn \"map\" \"Map\" 1.1 \"c #ffdea7 w 2.5 square 0 0 3.75 6.79 line -7 6.79 -3 6.79 w 5 square 0 0 1 4 c #d3883e w 1.05 cutcircle -7.05 6.02 1.5 0 90 w .9 line -8.5 5.95 -5.5 5.95 w 1.6 line -7.5 6.75 -6.5 6.75 w .25  line -7 5.62 -8.95 5.62 cont -8.95 5.9 line -6 5.62 -5.15 5.62 cont -5.15 5.9 cutcircle -2 -5.9 2 13.5 45 cutcircle 5 -5.9 2 13.5 45 line 0 -5.81 7 -5.81 line -2 -7.91 5 -7.91 w 2 line .8 -6.9 5.5 -6.9 w 1 line .5 -6.2 6.5 -6.2 dot 6.4 -6.6 w .6 line -.7 -7.7 1 -7.7 dot -.24 -7.25 line -3 3 3 3 line -3 1 3 1 line -3 -1 3 -1 line -3 -3 1 -3\n\"",
+      "newSidebarIcn \"properties\" \"Properties\" 1 \"w 3 c #c9c9c9 w 2 line 1 -1 -6 6 w .55 line -6.5 5.5 -7.5 6.5 line -5.5 6.5 -6.5 7.5 line -6.5 7.5 -7.5 7.5 cont -7.5 6.5 w 1.5 line -6.8 6.8 -5 5 c #cf8a00 w 2 line 0 -3.5 5 -8.5 cont 7 -8.5 cont 8.5 -7 cont 8.5 -5 cont 3.5 0 line -0 -3.5 3.5 0 w 4 line 3 -3 6 -6\"",
+      "newTool \"select\" \"Select\" \"n\" 1.7 \"w 4 c #f00 dot 10 10 dot -10 10 dot -10 -10 dot 10 -10 w 1 c #999 line -10 -5 -10 -2 line -10 5 -10 2 line 10 -5 10 -2 line 10 5 10 2 line -5 -10 -2 -10 line 5 -10 2 -10 line -5 10 -2 10 line 5 10 2 10\"",
       "newTool \"entity\" \"Entity\" \"e\" 2.3 \"c #ffc200 w 10 dot 0 3.2 w 2 line -2 -1 -2 -3 line 2 -1 2 -3 w 4 line 0 -1 0 -3 w .4 c #c67700 cutcircle 1.5 2 .9 4 125 cutcircle -1.5 2 .9 -4 125 line -.6 2 -.6 -4 line .6 2 .6 -4 line -1.6 1.1 1.6 1.1 w 3 c #585858 dot 0 -6.8 w 1.1 c #7b7b7b line -2 -4.5 2 -4.5 w 1.5 line -1.8 -4.7 -1.8 -7 line 1.8 -4.7 1.8 -7 line -1.8 -7 1.8 -7 w 3 dot 0 -6 w .75 c #585858 line -2.4 -5 2.4 -5 line -2.4 -6.5 2.4 -6.5\"",
       "newTool \"brush\" \"Brush\" \"b\" 1.7 \"c #fff w 2 line 0 -10 0 2 line -9.5 -6 -9.5 6 line 9.5 -6 9.5 6 line -9.5 6 0 2 line 0 2 9.5 6 line -9.5 6 0 10 line 9.5 6 0 10 line -9.5 -6 0 -10 line 0 -10 9.5 -6\"",
       "newTool \"texture\" \"Texture\" \"t\" 1.7 \"c #d7d7d9 w 2 square 0 0 10 10 w 9 square 0 0 6 6 dot 0 0 c #bd5b3e w 2.75 square -5.3 8 3.5 .75 square 5.3 8 3.5 .75 square -8 2.5 1 .75 square 0 2.5 3.5 .75 square 8 2.5 1 .75 square -5.3 -2.5 3.5 .75 square 5.3 -2.5 3.5 .75 square -8 -8 1 .75 square 0 -8 3.5 .75 square 8 -8 1 .75\""
@@ -89,9 +89,7 @@
       "        ",
       "        sidebary += 40"
     ],
-    "sidebar_map": [
-      "sidebary += 40"
-    ],
+    "sidebar_map": [],
     "sidebar_properties": [
       "        sidebary += -5",
       "        if selected_entity == 0 (",
