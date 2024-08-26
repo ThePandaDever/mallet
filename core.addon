@@ -47,7 +47,7 @@
       "sidebary += 40",
       "goto sidebarx + 5 sidebary * -1 + 18",
       "square 230 20 10 : c#secondary hover_c#tertiary",
-      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "if mouse_touching (; cursor \"pointer\"; if click (",
       "  includebase = true",
       "  installdefaultaddons",
       "  loadfiles",
@@ -56,13 +56,13 @@
       "sidebary += 40",
       "goto sidebarx + 5 sidebary * -1 + 18",
       "square 105 20 10 : chx#-63 c#secondary hover_c#tertiary",
-      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "if mouse_touching (; cursor \"pointer\"; if click (",
       "  http \"newtab\" \"https://github.com/ThePandaDever/mallet/wiki\"",
       "); )",
       "text \"Docs\" 9 : c#text chx#-20",
       "goto sidebarx + 5 sidebary * -1 + 18",
       "square 105 20 10 : chx#63 c#secondary hover_c#tertiary",
-      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "if mouse_touching (; cursor \"pointer\"; if click (",
       "  http \"newtab\" \"https://github.com/ThePandaDever/mallet\"",
       "); )",
       "text \"Github\" 9 : c#text chx#-28",
@@ -71,3 +71,4 @@
     ]
   }
 }
+
