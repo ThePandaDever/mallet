@@ -3,7 +3,8 @@
     "name": "Logs",
     "description": "Adds logs to mallet for easy debugging (logs.append(text))",
     "target": "mallet",
-    "version":"1-3a"
+    "version":"1-3a",
+    "author":"Flufi"
   },
   "scripts": {
     "load": [
