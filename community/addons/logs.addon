@@ -21,7 +21,7 @@
       "sidebary += 25",
       "goto sidebarx + 5 sidebary * -1 + 18",
       "square 230 20 10 : c#secondary hover_c#tertiary",
-      "if mouse_touching (; mouse \"pointer\"; if click (",
+      "if mouse_touching (; cursor \"pointer\"; if click (",
       "  logs = []",
       "); )",
       "text \"Clear Logs\" 8.5 : c#text chx#-105",
