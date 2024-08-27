@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name":"Dev Addon"
+  },
+  "scripts": {
+    "load": [
+      "newSidebar \"dev\" \"Dev Tab\""
+    ],
+    "sidebar_dev": [
+      "sidebary += 30",
+      "goto sidebarx + 5 sidebary * -1 + 18",
+      "square 230 20 10 : c#secondary hover_c#tertiary",
+      "if mouse_touching (; cursor \"pointer\"; if click (",
+      "  runaddon \"onboarding\" \"load\"",
+      "); )",
+      "text \"Start onboarding\" 8.5 : c#text chx#-105",
+      "sidebary += 30"
+    ]
+  }
+}
