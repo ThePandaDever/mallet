@@ -1,6 +1,10 @@
 {
   "info": {
-    "name":"Dev Addon"
+    "name":"Dev Addon",
+    "description":"Adds a few things for debugging and messing around with mallet",
+    "target": "mallet",
+    "version":"1-0a",
+    "author":"Flufi"
   },
   "scripts": {
     "load": [
