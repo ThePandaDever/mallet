@@ -19,13 +19,15 @@
       "  sidebary += 18",
       "  goto sidebarx + 5 sidebary * -1 + 18",
       "  square 230 17 10 0 1",
-      "  if mouse_touching \"temp1 = secondary\" else \"temp1 = primary\"",
-      "  if mouse_touching \"temp2 = tertiary\" else \"temp2 = secondary\"",
+      "  if mouse_touching \"temp1 = tertiary\" else \"temp1 = secondary\"",
+      "  if mouse_touching \"temp2 = secondary\" else \"temp2 = primary\"",
       "  col = addon in disabledaddons ? temp1 temp2",
-      "  square 230 17 10 : c#col",
+      "  square 230 17 15 : c#col",
+      "  square 230 17 10 : c#primary",
       "  text addon 10 : c#text chx#-110",
       "  goto sidebarx + 110 sidebary * -1 + 18",
-      "  square 15 15 5 : c#tertiary",
+      "  square 15 15 5 : c#secondary",
+      "  if mouse_touching (; cursor \"pointer\"; )",
       "  if mouse_touching and click (",
       "    i = disabledaddons.index(addon)",
       "    has = disabledaddons.contains(addon)",
@@ -71,4 +73,3 @@
     ]
   }
 }
-
