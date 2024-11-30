@@ -41,6 +41,7 @@
       "mp_addons = []",
       "mp_sv_i = 0",
       "save \"contents\"",
+      "save_data = save_data.JsonParse()",
       "t_s_k = tab",
       "if adn_mp_t_s.contains(t_s_k).not (; adn_mp_t_s[t_s_k] = {}; )",
       "adn_mp_dl_addons = []",
@@ -71,7 +72,6 @@
       "    square 14 14 10 : chx#30 c#secondary hover_c#tertiary tooltip#\"UnInstall\"",
       "    if mouse_touching (; cursor \"pointer\"; if click (",
       "    save \"cm_\" ++ name ++ \".addon\" \"delete\"",
-      "    log \"cm_\" ++ name ++ \".addon\"",
       "    loadfiles",
       "    ); ); icon \"bin\" .65 : c#text",
       "    square 14 14 10 : chx#30 c#secondary hover_c#tertiary tooltip#\"Update\"",
@@ -167,6 +167,17 @@
       "    obj[name] = s",
       "    adn_mp_t_s[t_s_k] = obj",
       "  )",
+      ")"
+    ],
+    "onb_load": [
+      "onb_progress_pointers.append(\"Marketplace\")"
+    ],
+    "onb_menu_Marketplace": [
+      "loc 4 2 0 0",
+      "each addon adn_mp_addons (",
+      "  change_y -35",
+      "  square frame.width / 2 - 30 40 10 : c#primary",
+      "  change_y -30",
       ")"
     ]
   }
