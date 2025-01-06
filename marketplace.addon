@@ -16,8 +16,9 @@
       "adn_mp_t_s = {}",
       "off = adn_mp_addons.str == \"adn_mp_addons\"",
       "if off (",
-      "  adn_mp_addons = \"https://raw.githubusercontent.com/ThePandaDever/mallet/main/community/addons/addons.json\".get().JsonClean()",
+      "  adn_mp_addons = \"https://raw.githubusercontent.com/ThePandaDever/mallet/main/community/addons/addons.json\".get().JsonParse()",
       ")",
+      "if adn_mp_addons.type == \"string\" (; adn_mp_addons = adn_mp_addons.JsonParse(); )",
       "adn_mp_dl_addons = []"
     ],
     "sidebar_marketplace": [
